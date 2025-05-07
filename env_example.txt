@@ -1,0 +1,8 @@
+# List team names in string format with commas to separate team names. No spaces
+team_names_env="Team1,Team2,Team3,Team4,Team5"
+
+# List teachers or members that should not be added to the team fundraisers list
+teachers_env="Bob Mart,Shay Given,Leandro Gomez,Marty Wade,Shane Smith"
+
+# Dictionary that maps the team names to the excel sheet ranges, add and remove as needed
+team_ranges_env="{'Team1': 'A8:B12', 'Team2': 'C8:D12', 'Team3': 'E8:F12', 'Team4': 'G8:H12', 'Team5': 'I8:J12'}"
