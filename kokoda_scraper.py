@@ -72,7 +72,7 @@ def process_kokoda_data(teams: list) -> tuple[dict, dict, int]:
     top_students_fundraisers = []
     # Append all raised amounts from each team to then extract team with highest amount raised and input into 'I3'
     all_teams_fundraise_amounts = []
-    for name in tqdm(teams, desc='In Progress...'):
+    for name in tqdm(teams, desc='Loading Kokoda Teams...'):
         team, raised_amount, target_amount, unsorted_entrants, rank = kokoda_scrape(name)
         # If team webpage does not exist, all variables except 'team' will be None. Omit this team from processing
         if raised_amount is None:
